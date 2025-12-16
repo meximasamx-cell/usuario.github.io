@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Producto | MEXIMASA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>MEXIMASA</h1>
+  <p>Moldea tu diversión, prueba tu imaginación</p>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="marca.html">Marca</a>
+    <a href="empresa.html">Empresa</a>
+    <a href="producto.html">Producto</a>
+    <a href="tienda.html">Tienda</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+  <div class="logo-header">
+  <img src="logo.png" alt="Logotipo MEXIMASA">
+</div>
+</header>
+
+<section class="nuestro-producto">
+  <h2>Nuestro producto</h2>
+
+  <div class="introduccion-producto">
+    <p>
+      MEXIMASA es una plastilina natural, no tóxica y completamente segura para los niños. 
+      Está elaborada a base de pigmentos comestibles y componentes naturales, lo que permite 
+      que los pequeños jueguen, moldeen y exploren sin riesgos.
+    </p>
+  </div>
+
+  <!-- Galería de imágenes con descripciones, separadas -->
+  <div class="galeria-producto">
+  <h3>Imágenes de la creación del producto</h3>
+
+  <div class="carrusel">
+    <div class="carrusel-contenedor">
+
+      
+      <div class="imagen-item">
+        <img src="m2.jpeg" alt="Imagen 1" loading="lazy">
+      </div>
+
+      <div class="imagen-item">
+        <img src="m3.jpeg" alt="Imagen 2" loading="lazy">
+      </div>
+
+      <div class="imagen-item">
+        <img src="m4.jpeg" alt="Imagen 3" loading="lazy">
+      </div>
+
+      <div class="imagen-item">
+        <img src="m5.jpeg" alt="Imagen 4" loading="lazy">
+      </div>
+
+      <div class="imagen-item">
+        <img src="m6.jpeg" alt="Imagen 5" loading="lazy">
+      </div>
+
+       <div class="imagen-item">
+        <img src="m7.jpeg" alt="Imagen 6" loading="lazy">
+      </div>
+
+      <div class="imagen-item">
+        <img src="m8.jpeg" alt="Imagen 7" loading="lazy">
+      </div>
+      
+      <div class="imagen-item">
+        <img src="m1.jpeg" alt="Imagen 8" loading="lazy">
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+  <!-- Video del proceso -->
+  <div class="video-producto">
+  <h3>Video de elaboración</h3>
+  <a href="https://youtu.be/r1ptGYnE7sk" target="_blank">
+    ▶ Ver video de elaboración en YouTube
+  </a>
+  <br>
+  <br>
+   <center><img src="vm.jpeg" alt="Descripción de la imagen" class="imagen-ajustada"></center>
+</div>
+</section>
+
+<style>
+.nuestro-producto {
+  font-family: Arial, sans-serif;
+  padding: 25px;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.nuestro-producto h2 {
+  text-align: center;
+  color: #C62828;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.nuestro-producto h3 {
+  color: #7e2979;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.nuestro-producto .introduccion-producto {
+  border-left: 5px solid #C62828;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.nuestro-producto .galeria-producto {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Espacio entre cada imagen */
+  margin-top: 20px;
+}
+
+.nuestro-producto .imagen-item {
+  text-align: center;
+}
+
+.nuestro-producto .imagen-item img {
+  max-width: 60%;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.nuestro-producto .descripcion-imagen {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.nuestro-producto .video-producto {
+  margin-top: 40px;
+}
+
+.nuestro-producto .video-producto video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===============================
+   AJUSTE DE VIDEO (SIN ZOOM)
+================================ */
+.video-producto {
+  max-width: 720px;      /* tamaño real del video */
+  margin: 40px auto;    /* centrado */
+  text-align: center;
+}
+
+.video-producto video {
+  width: 100%;
+  height: auto;         /* 🔴 evita el zoom */
+  max-height: 380px;    /* límite visual */
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  object-fit: contain; /* 🔴 mantiene proporción */
+  background: #000;    /* bordes negros si sobran */
+}
+
+@media (max-width: 768px) {
+  .video-producto {
+    max-width: 90%;
+  }
+
+  .video-producto video {
+    max-height: 260px;
+  }
+}
+
+</style>
+
+
+
+<section class="ficha-tecnica">
+  <h2>Ficha Técnica</h2>
+
+  
+
+  <!-- Información básica del producto -->
+  <div class="producto-info">
+    <p>📦 <strong>Nombre del producto:</strong> Comestilina</p>
+    <p>🏷️ <strong>Marca:</strong> MEXIMASA</p>
+    <p>🧩 <strong>Categoría:</strong> Alimento comestible - Plastilina natural</p>
+    <p>❄️ <strong>Conservación:</strong> Refrigeración</p>
+  </div>
+
+  <!-- Descripción general -->
+  <div class="descripcion">
+    <h3>📝 Descripción general</h3>
+    <p>Plastilina comestible elaborada a base de frutas naturales, diseñada para estimular la creatividad de niños y niñas de forma segura, divertida y nutritiva.</p>
+  </div>
+
+  <!-- Características principales -->
+  <div class="caracteristicas">
+    <h3>✨ Características principales</h3>
+    <ul>
+      <li>100% comestible</li>
+      <li>Elaborada con frutas naturales</li>
+      <li>Sin colorantes artificiales</li>
+      <li>Textura suave y moldeable</li>
+      <li>Apta para niños</li>
+    </ul>
+  </div>
+
+  <!-- Ingredientes y presentación -->
+  <div class="ingredientes">
+    <h3>🍓 Ingredientes y presentación</h3>
+    <p>Frutas, miel, sal, azúcar, masa, agua y aceite.</p>
+    <p><strong>Cantidad de producto:</strong> Barra de un solo sabor de 250g y set de 5 sabores</p>
+  </div>
+
+  <!-- Fabricante y origen -->
+  <div class="fabricante">
+    <h3>🏭 Fabricante y origen</h3>
+    <p><strong>Domicilio:</strong> Av. Paricutín Sector 53 casa 2, Infonavit Norte</p>
+    <p><strong>País de origen:</strong> México</p>
+  </div>
+
+  <!-- Advertencias -->
+  <div class="advertencias">
+    <h3>⚠️ Advertencias y precauciones</h3>
+    <ul>
+      <li>Exceso en calorías</li>
+      <li>Exceso en azúcares</li>
+      <li>Exceso en grasas saturadas</li>
+    </ul>
+  </div>
+
+  <!-- Instrucciones de uso -->
+  <div class="uso">
+    <h3>🎨 Instrucciones de uso</h3>
+    <p>Destapa, crea, diviértete y consúmela.</p>
+  </div>
+
+  <!-- Fecha de caducidad -->
+  <div class="caducidad">
+    <h3>📅 Fecha de caducidad</h3>
+    <p>De 1 a 3 meses</p>
+  </div>
+
+  <!-- Condiciones de almacenamiento -->
+  <div class="almacenamiento">
+    <h3>🧊 Condiciones de almacenamiento</h3>
+    <p>Conservar en un lugar seco, protegido de la humedad y de agentes externos. Se recomienda mantener refrigerado para prolongar su vida útil.</p>
+  </div>
+
+</section>
+
+<style>
+.ficha-tecnica {
+  font-family: Arial, sans-serif;
+  background-color: #fefefe;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.ficha-tecnica h2 {
+  text-align: center;
+  color: #C62828;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.ficha-tecnica h3 {
+  color: #7e2979;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.ficha-tecnica p, .ficha-tecnica li {
+  line-height: 1.6;
+  color: #333;
+}
+
+.ficha-tecnica ul {
+  padding-left: 25px;
+}
+
+.ficha-tecnica div {
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-left: 5px solid #F9A825;
+  background-color: #fff7e6;
+  border-radius: 8px;
+}
+
+.ficha-tecnica .introduccion {
+  background-color: #f9e6f2;
+  border-left: 5px solid #C62828;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.ficha-tecnica .producto-info p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.ficha-tecnica .caracteristicas ul,
+.ficha-tecnica .advertencias ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.carrusel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carrusel-contenedor {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carrusel .imagen-item {
+  min-width: 250px;   /* 🔹 ahora las imágenes son más pequeñas */
+  text-align: center;
+}
+
+.carrusel .imagen-item img {
+  width: 100%;
+  height: 160px;      /* 🔹 tamaño controlado */
+  object-fit: cover; /* 🔹 no se deforman */
+  border-radius: 8px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+
+</style>
+
+
+<footer>
+  <p>&copy; 2025 MEXIMASA</p>
+</footer>
+
+
+
+<script>
+let indice = 0;
+const contenedor = document.querySelector('.carrusel-contenedor');
+const items = document.querySelectorAll('.carrusel .imagen-item');
+
+/* ancho real de una imagen */
+const anchoItem = items[0].offsetWidth + 15; // 15 = gap del CSS
+
+setInterval(() => {
+  indice++;
+
+  if (indice >= items.length) {
+    indice = 0;
+    contenedor.style.transform = `translateX(0px)`;
+  } else {
+    contenedor.style.transform = `translateX(-${indice * anchoItem}px)`;
+  }
+}, 5000); /* velocidad más lenta */
+</script>
+
+</body>
+</html>

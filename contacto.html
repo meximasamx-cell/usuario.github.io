@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto | MEXIMASA</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Estilos adicionales para contacto */
+    section.contacto {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    section.contacto h2 {
+      text-align: center;
+      color: var(--primario);
+    }
+    .contact-info, .contact-form, .contact-map, .contact-redes {
+      margin-top: 25px;
+    }
+    .contact-info p {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+    .contact-info i {
+      color: var(--primario);
+      margin-right: 10px;
+    }
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-form input, 
+    .contact-form textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      padding: 12px;
+      background-color: var(--primario);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .contact-form button:hover {
+      background-color: #a71c1c;
+    }
+    .contact-redes a {
+      margin-right: 20px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: var(--secundario);
+      transition: color 0.3s;
+    }
+    .contact-redes a:hover {
+      color: var(--primario);
+    }
+    .contact-map iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-header">
+    <img src="logo.png" alt="Logotipo MEXIMASA">
+  </div>
+  <h1>MEXIMASA</h1>
+  <p>Moldea tu diversión, prueba tu imaginación</p>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="marca.html">Marca</a>
+    <a href="empresa.html">Empresa</a>
+    <a href="producto.html">Producto</a>
+    <a href="tienda.html">Tienda</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+</header>
+
+<section class="contacto">
+  <h2>Contacto</h2>
+
+  <div class="contact-info">
+    <p><i class="fas fa-envelope"></i> contacto@meximasa.com</p>
+    <p><i class="fas fa-phone"></i> 56 1517 0294</p>
+    <p><i class="fas fa-map-marker-alt"></i> México</p>
+  </div>
+
+  <div class="contact-form">
+    <h3>Envíanos un mensaje</h3>
+    <form action="#" method="post">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="correo" placeholder="Tu correo" required>
+      <input type="text" name="asunto" placeholder="Asunto" required>
+      <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <div class="contact-map">
+    <h3>Ubicación</h3>
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.5727495744406!2d-99.22250058469969!3d19.639798386774565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d20296c1b16a65%3A0xa3c77c9fbfcf07a6!2sINFONAVIT%20Norte%2C%20Cuautitl%C3%A1n%20Izcalli%2C%20M%C3%A9x.!5e0!3m2!1ses!2smx!4v1700000000000"
+    width="100%"
+    height="300"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  </div>
+
+  <div class="contact-redes">
+    <h3>Síguenos en redes sociales</h3>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 MEXIMASA</p>
+</footer>
+
+</body>
+</html>

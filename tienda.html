@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tienda | MEXIMASA</title>
+
+<style>
+/* ===============================
+   VARIABLES DE COLOR (ISOTIPO)
+================================ */
+:root {
+  --primario: #C62828;
+  --secundario: #7e2979;
+  --acento: #F9A825;
+  --oscuro: #1F1F1F;
+  --claro: #FFFFFF;
+  --gris: #F5F5F5;
+}
+
+/* ===============================
+   CONFIGURACIÓN GENERAL
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--gris);
+  color: var(--oscuro);
+}
+
+/* ===============================
+   HEADER
+================================ */
+header {
+  background: linear-gradient(135deg, var(--primario), var(--secundario));
+  color: var(--claro);
+  padding: 30px 10%;
+  text-align: center;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: var(--claro);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--acento);
+}
+
+/* ===============================
+   SECCIONES
+================================ */
+section {
+  background: var(--claro);
+  padding: 60px 10%;
+  margin: 30px auto;
+  border-radius: 20px;
+  max-width: 1200px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: var(--primario);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primario), var(--secundario));
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  border-radius: 10px;
+}
+
+/* ===============================
+   PRODUCTOS
+================================ */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.producto {
+  background: var(--claro);
+  padding: 30px 20px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  border-top: 8px solid var(--acento);
+  transition: transform 0.3s;
+}
+
+
+
+.producto:hover {
+  transform: translateY(-10px);
+}
+
+.producto img {
+  width: 180px;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* ===============================
+   BOTONES
+================================ */
+button {
+  background: linear-gradient(135deg, var(--primario), var(--secundario));
+  color: var(--claro);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* ===============================
+   CARRITO
+================================ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background: var(--primario);
+  color: var(--claro);
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+/* ===============================
+   FORMULARIO DE PAGO
+================================ */
+#pagoForm {
+  margin-top: 25px;
+  max-width: 400px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* ===============================
+   MODAL
+================================ */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contenido {
+  background: var(--claro);
+  padding: 35px;
+  border-radius: 20px;
+  text-align: center;
+  border-top: 8px solid var(--acento);
+}
+
+/* ===============================
+   FOOTER
+================================ */
+footer {
+  background: var(--oscuro);
+  color: var(--claro);
+  text-align: center;
+  padding: 25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>MEXIMASA</h1>
+  <p>Moldea tu diversión, prueba tu imaginación</p>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="marca.html">Marca</a>
+    <a href="empresa.html">Empresa</a>
+    <a href="producto.html">Producto</a>
+    <a href="tienda.html">Tienda</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+  
+</header>
+
+<section>
+  <h2>Tienda en línea</h2>
+
+ <div class="productos">
+
+  <div class="producto">
+    <img src="frutas.jpg">
+    <h3>Set de 5 sabores cada uno de 50 gramos</h3>
+    <p><strong>$260 MXN</strong></p>
+    <button data-nombre="Set de 5 sabores" data-precio="260">Agregar</button>
+  </div>
+
+  <div class="producto">
+    <img src="mango.jpg">
+    <h3>Comestilina Sabor Mango 250 gramos</h3>
+    <p><strong>$260 MXN</strong></p>
+    <button data-nombre="Comestilina Sabor Mango 250 gramos" data-precio="260">Agregar</button>
+  </div>
+
+  <div class="producto">
+    <img src="fresa.jpg">
+    <h3>Comestilina Sabor Fresa 250 gramos</h3>
+    <p><strong>$260 MXN</strong></p>
+    <button data-nombre="Comestilina Sabor Fresa 250 gramos" data-precio="260">Agregar</button>
+  </div>
+
+  <div class="producto">
+    <img src="naran.jpg">
+    <h3>Comestilina Sabor Naranja 250 gramos</h3>
+    <p><strong>$260 MXN</strong></p>
+    <button data-nombre="Comestilina Sabor Naranja 250 gramos" data-precio="260">Agregar</button>
+  </div>
+
+  <div class="producto">
+    <img src="kiwi.jpg">
+    <h3>Comestilina Sabor Kiwi 250 gramos</h3>
+    <p><strong>$260 MXN</strong></p>
+    <button data-nombre="Comestilina Sabor Kiwi 250 gramos" data-precio="260">Agregar</button>
+  </div>
+
+  <div class="producto">
+    <img src="mora.jpg">
+    <h3>Comestilina Sabor Mora azul 250 gramos</h3>
+    <p><strong>$260 MXN</strong></p>
+    <button data-nombre="Comestilina Sabor Mora azul 250 gramos" data-precio="260">Agregar</button>
+  </div>
+
+</div>
+</section>
+
+<section>
+  <h2>🛒 Carrito</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Cantidad</th>
+        <th>Precio</th>
+        <th>Subtotal</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody id="carrito"></tbody>
+  </table>
+
+  <h3>Total: $<span id="total">0</span> MXN</h3>
+  <button id="pagar">Pagar</button>
+
+  <div id="pagoForm" style="display:none;">
+    <form id="formPago">
+      <input type="text" placeholder="Nombre del titular" required>
+      <input type="text" placeholder="Número de tarjeta" maxlength="16" required>
+      <input type="month" required>
+      <input type="password" placeholder="CVV" maxlength="3" required>
+      <button type="submit">Confirmar pago</button>
+    </form>
+  </div>
+</section>
+
+<div class="modal" id="modalExito">
+  <div class="modal-contenido">
+    <img src="img/isotipo.png" width="120">
+    <h2>Pago exitoso</h2>
+    <p>Gracias por comprar en MEXIMASA</p>
+    <button onclick="cerrarModal()">Aceptar</button>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 MEXIMASA | Todos los derechos reservados</p>
+</footer>
+
+<script>
+let carrito = [];
+
+document.querySelectorAll("button[data-nombre]").forEach(btn => {
+  btn.onclick = () => {
+    const n = btn.dataset.nombre;
+    const p = +btn.dataset.precio;
+    const prod = carrito.find(x => x.nombre === n);
+    prod ? prod.cantidad++ : carrito.push({nombre:n,precio:p,cantidad:1});
+    actualizar();
+  };
+});
+
+function actualizar() {
+  const c = document.getElementById("carrito");
+  const t = document.getElementById("total");
+  c.innerHTML = "";
+  let total = 0;
+
+  carrito.forEach(p => {
+    const s = p.precio * p.cantidad;
+    total += s;
+    c.innerHTML += `
+      <tr>
+        <td>${p.nombre}</td>
+        <td>${p.cantidad}</td>
+        <td>$${p.precio}</td>
+        <td>$${s}</td>
+        <td><button onclick="eliminar('${p.nombre}')">Eliminar</button></td>
+      </tr>`;
+  });
+  t.textContent = total;
+}
+
+function eliminar(n) {
+  carrito = carrito.filter(p => p.nombre !== n);
+  actualizar();
+}
+
+document.getElementById("pagar").onclick = () => {
+  if (carrito.length) document.getElementById("pagoForm").style.display = "block";
+};
+
+document.getElementById("formPago").onsubmit = e => {
+  e.preventDefault();
+  carrito = [];
+  actualizar();
+  document.getElementById("pagoForm").style.display = "none";
+  document.getElementById("modalExito").style.display = "flex";
+};
+
+function cerrarModal() {
+  document.getElementById("modalExito").style.display = "none";
+}
+</script>
+
+</body>
+</html>
